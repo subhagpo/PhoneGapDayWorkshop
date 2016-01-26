@@ -30,6 +30,7 @@ Here's the agenda,
 
 ##Pre-reqs
 - Github account
+- Workshop steps performed on OSX & Android device (but, should work for your iOS devices too)
 - Interest in hybrid app building
 - Motivation to learn CI through VSTS
 - Patience, lots of it!

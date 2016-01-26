@@ -39,6 +39,9 @@ First, sign up for Visual Studio Team Services
  
   ![build](../assets/build.png)
  
+  >**Note**:
+In order to build for iOS, you can use the [cross platform agent](https://www.npmjs.com/package/vsoagent-installer) or the [PhoneGap remote build](https://build.phonegap.com) (if you have a PhoneGap account)
+
 ##Run UI Tests on SauceLabs
 We are using an existing account, setup for this workshop. 
 
