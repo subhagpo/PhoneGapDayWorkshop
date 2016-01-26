@@ -30,6 +30,7 @@ Here's the agenda,
 
 ##Pre-reqs
 - Github account
+- Fork https://github.com/subhagpo/App and then Git clone 
 - [VS CODE](https://code.visualstudio.com/) with [Cordova Tools extension](https://marketplace.visualstudio.com/#VSCode)
 - Workshop steps performed on OSX & Android device (but, should work for your iOS devices too)
 - Interest in hybrid app building & motivation to learn CI through VSTS

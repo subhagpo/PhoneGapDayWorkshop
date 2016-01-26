@@ -41,7 +41,19 @@ First, sign up for Visual Studio Team Services
   >**Note**:
 In order to build for iOS, you can use the [cross platform agent](https://www.npmjs.com/package/vsoagent-installer) or the [PhoneGap remote build](https://build.phonegap.com) (if you have a PhoneGap account)
 
-##Run UI Tests on SauceLabs
+###Deploy to HockeyApp
+- Install the [HockeyApp Extension](https://marketplace.visualstudio.com/items/ms.hockeyapp) for VS Team Services.
+- Go to Account Settings on the HockeyApp site, choose API Tokens, and grab the details of your access token.
+- Back on the Team Services site, go to the control panel (via the gear icon in the upper right hand corner) and click on Services tab.
+- Click New Service Endpoint, select HockeyApp, and enter a name along with your access token. 
+- Next, go back to the build definition you created above and add the HockeyApp build step from the Deploy category and move it after Cordova Build. Use the following settings:
+    - HockeyApp Connection: Select the name of the service endpoint you created above.
+    - Binary File Path:platforms\android\build\outputs\apk\android-debug.apk.
+    - Symbols File Path: (For iOS only) This is needed for native crash statistics which we will configure later. By default these land in bin/ios/[configuration]/[app name].dSYM for the Cordova Build task.
+
+  ![deploy to hockeyapp](../assets/deployhockeyapp.png)
+  
+##[Optional] Run UI Tests on SauceLabs
 We are using an existing account already setup for this workshop. 
 
 ###Upload the built package to SauceLab
@@ -61,16 +73,3 @@ We are using an existing account already setup for this workshop.
     - Advanced > Working Folder: tests
  
   ![run UI tests](../assets/uitest.png)
-  
-
-###Deploy to HockeyApp
-- Install the [HockeyApp Extension](https://marketplace.visualstudio.com/items/ms.hockeyapp) for VS Team Services.
-- Go to Account Settings on the HockeyApp site, choose API Tokens, and grab the details of your access token.
-- Back on the Team Services site, go to the control panel (via the gear icon in the upper right hand corner) and click on Services tab.
-- Click New Service Endpoint, select HockeyApp, and enter a name along with your access token. 
-- Next, go back to the build definition you created above and add the HockeyApp build step from the Deploy category and move it after Cordova Build. Use the following settings:
-    - HockeyApp Connection: Select the name of the service endpoint you created above.
-    - Binary File Path:platforms\android\build\outputs\apk\android-debug.apk.
-    - Symbols File Path: (For iOS only) This is needed for native crash statistics which we will configure later. By default these land in bin/ios/[configuration]/[app name].dSYM for the Cordova Build task.
-
-  ![deploy to hockeyapp](../assets/deployhockeyapp.png)
