@@ -1,7 +1,6 @@
 #How to setup CI using VSTS 2015
 
-Lot of good information, [here](https://msdn.microsoft.com/en-us/library/vs/alm/build/cordova/cordova-build).
-But, lets do it ourselves!!
+Lot of good information, [here](https://msdn.microsoft.com/en-us/library/vs/alm/build/cordova/cordova-build), but lets do it ourselves!!
 
 ##Sign up into VSTS
 First, sign up for Visual Studio Team Services
@@ -43,7 +42,7 @@ First, sign up for Visual Studio Team Services
 In order to build for iOS, you can use the [cross platform agent](https://www.npmjs.com/package/vsoagent-installer) or the [PhoneGap remote build](https://build.phonegap.com) (if you have a PhoneGap account)
 
 ##Run UI Tests on SauceLabs
-We are using an existing account, setup for this workshop. 
+We are using an existing account already setup for this workshop. 
 
 ###Upload the built package to SauceLab
 - Click **Add Build Step** and select *cURL Upload Files* from the Utility category. Use the following settings: 

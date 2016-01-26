@@ -6,11 +6,11 @@ Build and manage your hybrid application with unit/UI tests and integrating it w
 
 ##What to expect?
 - Demo of Hybrid app (based on Ionic tabs template) configured to run unit (Jasmine/Karma) and UI (protractor/Appium) tests.
-- Learn how to create build definitions for continuous integration for VSTA that enables build, test & distribution of your app, every time a change is committed to your repo.
+- Learn how to create build definitions for continuous integration using VSTS 2015, that enables - build, test & distribution of your app, every time a change is committed to your repo.
 
 ##Audience
-- Cordova developers tireless designing, developing, testing, validating and building hybrid mobile applications.
-- Cordova developers using CI systems for cloud build, test & continuous delivery to beta testers, client and consumers.
+- Cordova developers tirelessly designing, developing, building, testing & validating their hybrid mobile applications.
+- Cordova developers using CI systems for building, testing & continuous delivery of their apps to testers, clients and eventually the consumers.
 
 ##Should I stay? 
 Here's the agenda, 
@@ -30,10 +30,8 @@ Here's the agenda,
 
 ##Pre-reqs
 - Github account
+- [VS CODE](https://code.visualstudio.com/) with [Cordova Tools extension](https://marketplace.visualstudio.com/#VSCode)
 - Workshop steps performed on OSX & Android device (but, should work for your iOS devices too)
-- Interest in hybrid app building
-- Motivation to learn CI through VSTS
-- Patience, lots of it!
-
-
+- Interest in hybrid app building & motivation to learn CI through VSTS
+- Patience & lots of it!
 - *[Optional]* Ionic/Cordova/Taco install (if you want to try stuff locally)

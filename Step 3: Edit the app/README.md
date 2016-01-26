@@ -10,6 +10,6 @@
 	
 - In Controller.js::line 154, simulate a crash. We are "bad" developers :)
 
-    hockeyapp.forceCrash();
+        hockeyapp.forceCrash();
 	
 - Update the version in config.xml, for this *bad* update.
