@@ -19,7 +19,7 @@ Here's the agenda,
     - Clone the repo https://github.com/subhagpo/App : A feedback application, using Facebook authentication integrated with Firebase backend, that allows users to submit ratings to predefined set of questions using their mobile devices. 
     - Build the app, show it running on the device.
     - Create HockeyApp account and deploy the app for beta testers to download.
-    - Add HockeyApp registration, unti tests and run unit/UI tests on a device.
+    - Add HockeyApp registration, unit tests and run unit/UI tests on a device.
 
 - CI workflow 
     - Create a VSTS instance connected to the GITHUB repo
