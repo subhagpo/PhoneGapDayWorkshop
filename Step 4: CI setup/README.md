@@ -16,17 +16,6 @@ First, sign up for Visual Studio Team Services
     - Go to github.com and Create a new personal access token which is used for the connection (Recommended scopes -- repo, user, admin:repo_hook)
 
 - Use the resulting connection as our source repo
-
-##Install all the dependencies (Karma, Jasmine etc) 
-- Add the npm step from the **Package** category with 'install' as the Command and --no-optional --force under Advanced > Arguments.
-
-    ![npm install](../assets/npminstall.png)
-    
-##Gulp task for running unit tests
-- Add the Gulp step from the **Build** category and configure it to run the test task
-- *Optional:* Add the *Publish Test Results* task from the **Test** category and use tests/_results/*.xml for Test Results Files and be sure to check Control Options > Always run.
-    
-    ![gulp test](../assets/gulptest.png)
  
 ##Build the package
 - Install the [Cordova Extension](https://marketplace.visualstudio.com/items/ms-vsclient.cordova-extension) for VS Team Services.
@@ -41,7 +30,7 @@ First, sign up for Visual Studio Team Services
   >**Note**:
 In order to build for iOS, you can use the [cross platform agent](https://www.npmjs.com/package/vsoagent-installer) or the [PhoneGap remote build](https://build.phonegap.com) (if you have a PhoneGap account)
 
-###Deploy to HockeyApp
+###Deploy to HockeyApp (http://hockeyapp.net/features/)
 - Install the [HockeyApp Extension](https://marketplace.visualstudio.com/items/ms.hockeyapp) for VS Team Services.
 - Go to Account Settings on the HockeyApp site, choose API Tokens, and grab the details of your access token.
 - Back on the Team Services site, go to the control panel (via the gear icon in the upper right hand corner) and click on Services tab.
@@ -52,7 +41,18 @@ In order to build for iOS, you can use the [cross platform agent](https://www.np
     - Symbols File Path: (For iOS only) This is needed for native crash statistics which we will configure later. By default these land in bin/ios/[configuration]/[app name].dSYM for the Cordova Build task.
 
   ![deploy to hockeyapp](../assets/deployhockeyapp.png)
-  
+
+##[Optional]Install all the dependencies (Karma, Jasmine etc) 
+- Add the npm step from the **Package** category with 'install' as the Command and --no-optional --force under Advanced > Arguments.
+
+    ![npm install](../assets/npminstall.png)
+    
+##[Optional]Gulp task for running unit tests
+- Add the Gulp step from the **Build** category and configure it to run the test task
+- *Optional:* Add the *Publish Test Results* task from the **Test** category and use tests/_results/*.xml for Test Results Files and be sure to check Control Options > Always run.
+    
+    ![gulp test](../assets/gulptest.png)
+
 ##[Optional] Run UI Tests on SauceLabs
 We are using an existing account already setup for this workshop. 
 
