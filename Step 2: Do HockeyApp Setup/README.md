@@ -5,6 +5,8 @@
 - Get the app by downloading it from:  https://github.com/subhagpo/PGDAndroidApp
 - Add the downloaded app to HockeyApp on the web portal using the dashboard and make sure you *release it*
 - Go to your *accounts settings* and create API token (we will use this in our CI)
+
+As a tester:
 - On your device (say Android) signup to HockeyApp
     - Go to hockeyapp.net
     - Open the Menu on the right, go to "Apps"

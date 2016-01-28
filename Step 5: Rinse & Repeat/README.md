@@ -2,6 +2,8 @@
 - CI system in place, lets commit the *bad* update.
 - Look, our CI system is chugging along......
 - Once completed, our HockeyApp will show a new version of the app released. 
+
+As a tester, 
 - Download and run the application.
 - Uh ho, CRASH :) 
 

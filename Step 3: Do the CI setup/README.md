@@ -48,13 +48,13 @@ In order to build for iOS, you can use the cross platform agent @ https://www.np
 
     ![npm install](../assets/npminstall.png)
     
-##Run the tests, Gulp task for running unit tests
+##If you want to run Unit Tests, add a Gulp task for running unit tests
 - Add the Gulp step from the **Build** category and configure it to run the test task
 - *Optional:* Add the *Publish Test Results* task from the **Test** category and use tests/_results/*.xml for Test Results Files and be sure to check Control Options > Always run.
     
     ![gulp test](../assets/gulptest.png)
 
-##Run UI Tests on SauceLabs
+##If you want to run, Run UI Tests on SauceLabs
 We are using an existing account already setup for this workshop. 
 
 ###Upload the built package to SauceLab

@@ -15,26 +15,18 @@ Build and manage your hybrid application with unit/UI tests and integrating it w
 ##Should I stay? 
 Here's the agenda, 
 
-- Watch the local workflow in action, 
-    - Clone the repo https://github.com/subhagpo/App : A feedback application, using Facebook authentication integrated with Firebase backend, that allows users to submit ratings to predefined set of questions using their mobile devices. 
-    - Build the app, show it running on the device.
-    - Create HockeyApp account and deploy the app for beta testers to download.
-    - Add HockeyApp registration, unit tests and run unit/UI tests on a device.
-
+- Demo of the App, with tests running on the device.
 - CI workflow 
-    - Create a VSTS instance connected to the GITHUB repo
-    - Build definitions for
-        - Test (Unit/UI)
+    - Create a VSTS instance connected to a GITHUB repo
+    - Create Build definitions for
         - Building the package (Cordova build)
-        - Deployment (HockeyApp)
+        - Deployment to testers (HockeyApp)
 
 ##Pre-reqs
 - Github account
-- Fork https://github.com/subhagpo/App and then Git clone 
-- Install VS CODE @ https://code.visualstudio.com/ 
-- Install Cordova Tools extension @ https://marketplace.visualstudio.com/items?itemName=vsmobile.cordova-tools 
+- Fork https://github.com/subhagpo/App and then Git clone your repo, we will be connecting to it from our CI 
 - Interest in hybrid app building & motivation to learn CI through VSTS
 - Patience & lots of it!
 
-- Workshop steps performed on OSX & Android device (but, should work for your iOS devices too)
-- *[Optional]* Ionic/Cordova/Taco install (if you want to try stuff locally)
+*Note:* The workshop is performed on an Android device 
+(but, should work for your iOS devices too, with some additional steps)
