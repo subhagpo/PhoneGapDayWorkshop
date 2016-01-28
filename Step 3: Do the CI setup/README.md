@@ -22,7 +22,7 @@ First, sign up for Visual Studio Team Services
 - Click **Add Build Step** and select *Cordova Build* from the Build category and add it to your build definition
 - Fill in the details, by using the following settings: 
     - Platform: android
-    - Configuration: debug or release  (set in Variables)
+    - Configuration: debug or release  (this is set in Variables)
     - Cordova Version: This is pulled from taco.json if you are using VS Tools for Apache Cordova or the TACO CLI, Otherwise you’ll want to enter a version here (*default* : 5.3.3)
     - iOS/Android: Add certs/keys/provisioning profiles as necessary
  
@@ -38,7 +38,7 @@ In order to build for iOS, you can use the cross platform agent @ https://www.np
 - Click New Service Endpoint, select HockeyApp, and enter a name along with your access token. 
 - Next, go back to the build definition that we are working on and add the HockeyApp build step ("+") from the Deploy category and move it after Cordova Build. Use the following settings:
     - HockeyApp Connection: Select the name of the service endpoint you created above
-    - Add APP ID for the hockey app.
+    - Add APP ID for the hockey app, you will get this from the Hockey App dashboard.
     - Binary File Path:platforms\android\build\outputs\apk\android-debug.apk
    
   ![deploy to hockeyapp](../assets/deployhockeyapp.png)

@@ -31,8 +31,10 @@ Here's the agenda,
 ##Pre-reqs
 - Github account
 - Fork https://github.com/subhagpo/App and then Git clone 
-- [VS CODE](https://code.visualstudio.com/) & Cordova Tools extension @ https://marketplace.visualstudio.com/items?itemName=vsmobile.cordova-tools 
-- Workshop steps performed on OSX & Android device (but, should work for your iOS devices too)
+- Install VS CODE @ https://code.visualstudio.com/ 
+- Install Cordova Tools extension @ https://marketplace.visualstudio.com/items?itemName=vsmobile.cordova-tools 
 - Interest in hybrid app building & motivation to learn CI through VSTS
 - Patience & lots of it!
+
+- Workshop steps performed on OSX & Android device (but, should work for your iOS devices too)
 - *[Optional]* Ionic/Cordova/Taco install (if you want to try stuff locally)
