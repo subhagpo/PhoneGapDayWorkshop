@@ -1,10 +1,10 @@
 #How to setup CI using VSTS 2015
 
-Lot of good information, [here](https://msdn.microsoft.com/en-us/library/vs/alm/build/cordova/cordova-build), but lets do it ourselves!!
+Lot of good information, @ https://msdn.microsoft.com/en-us/library/vs/alm/build/cordova/cordova-build, but lets do it ourselves!!
 
 ##Sign up into VSTS
 First, sign up for Visual Studio Team Services
-- Create a new VSTS account by going to visualstudio.com and signing in with a Microsoft account (hotmail, outlook, live.com, etc) and use it [here](www.visualstudio.com/en-us). 
+- Create a new VSTS account by going to visualstudio.com and signing in with a Microsoft account (hotmail, outlook, live.com, etc). Visit www.visualstudio.com/en-us. 
 - Create a new project in that account
 
 ##Create build definition
@@ -18,7 +18,7 @@ First, sign up for Visual Studio Team Services
 - Use the resulting connection as our source repo
  
 ##Build the package
-- Install the [Cordova Extension](https://marketplace.visualstudio.com/items/ms-vsclient.cordova-extension) for VS Team Services.
+- Install the extension @ https://marketplace.visualstudio.com/items/ms-vsclient.cordova-extension for VS Team Services.
 - Click **Add Build Step** and select *Cordova Build* from the Build category. Use the following settings: 
     - Platform: android
     - Configuration: debug or release  (set in Variables)
@@ -28,10 +28,10 @@ First, sign up for Visual Studio Team Services
   ![build](../assets/build.png)
  
   >**Note**:
-In order to build for iOS, you can use the [cross platform agent](https://www.npmjs.com/package/vsoagent-installer) or the [PhoneGap remote build](https://build.phonegap.com) (if you have a PhoneGap account)
+In order to build for iOS, you can use the cross platform agent @ https://www.npmjs.com/package/vsoagent-installer or the PhoneGap remote build @ https://build.phonegap.com (if you have a PhoneGap account)
 
 ###Deploy to HockeyApp (http://hockeyapp.net/features/)
-- Install the [HockeyApp Extension](https://marketplace.visualstudio.com/items/ms.hockeyapp) for VS Team Services.
+- Install the HockeyApp Extension @ https://marketplace.visualstudio.com/items/ms.hockeyapp for VS Team Services.
 - Go to Account Settings on the HockeyApp site, choose API Tokens, and grab the details of your access token.
 - Back on the Team Services site, go to the control panel (via the gear icon in the upper right hand corner) and click on Services tab.
 - Click New Service Endpoint, select HockeyApp, and enter a name along with your access token. 
