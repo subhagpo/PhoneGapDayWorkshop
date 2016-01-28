@@ -8,13 +8,11 @@ First, sign up for Visual Studio Team Services
 - Create a new project in that account
 
 ##Create build definition
-- Click on the store icon in the account and install the Cordova Extension for Visual Studio Team Services
-- Next create a build definition, by going to the Build tab in your Team Services project and clicking the “+” icon to create a new build definition. Select the Empty template
+- Create a build definition, by going to the Build tab in your Team Services project and clicking the “+” icon to create a new build definition. Select the Empty template
     - When setting up the definition, specify “github” as the repo
     - Go to the “Repository” tab for the definition and clicked “Manage Connections”
     - Create a new github connection through 'New Service Endpoint"
     - Go to github.com and Create a new personal access token which is used for the connection (Recommended scopes -- repo, user, admin:repo_hook)
-
 - Use the resulting connection as our source repo
  
 ##Build the package
@@ -42,18 +40,18 @@ In order to build for iOS, you can use the cross platform agent @ https://www.np
 
   ![deploy to hockeyapp](../assets/deployhockeyapp.png)
 
-##[Optional]Install all the dependencies (Karma, Jasmine etc) 
+##If you want to add Unit Tests, Install all the dependencies (Karma, Jasmine etc) 
 - Add the npm step from the **Package** category with 'install' as the Command and --no-optional --force under Advanced > Arguments.
 
     ![npm install](../assets/npminstall.png)
     
-##[Optional]Gulp task for running unit tests
+##Run the tests, Gulp task for running unit tests
 - Add the Gulp step from the **Build** category and configure it to run the test task
 - *Optional:* Add the *Publish Test Results* task from the **Test** category and use tests/_results/*.xml for Test Results Files and be sure to check Control Options > Always run.
     
     ![gulp test](../assets/gulptest.png)
 
-##[Optional] Run UI Tests on SauceLabs
+##Run UI Tests on SauceLabs
 We are using an existing account already setup for this workshop. 
 
 ###Upload the built package to SauceLab
